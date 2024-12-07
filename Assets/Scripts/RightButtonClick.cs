@@ -5,7 +5,12 @@ using UnityEngine;
 
 public class RightButtonClick : MonoBehaviour
 {
+    public AudioClip trashSound;
+    public AudioClip loveSound;
+    public AudioSource audioSource;
+
     [SerializeField] GameObject[] profileNumber;
+
     public void ProfileLiked()
     {
         StaticManager.profilesLiked++;
@@ -34,6 +39,19 @@ public class RightButtonClick : MonoBehaviour
         Debug.Log("Firstchoice:" + StaticManager.firstChoice);
         Debug.Log("Secondchoice: " + StaticManager.secondChoice);
         Debug.Log("Lasttchoice: " + StaticManager.lastChoice);
+    }
+
+    public void trash() 
+    {
+        Debug.Log("trash");
+        audioSource.PlayOneShot(trashSound, 0.7F);
+        NextProfile();
+    }
+
+    public void love()
+    {
+        Debug.Log("love");
+        audioSource.PlayOneShot(loveSound, 0.7F);
     }
 
     public void NextProfile()
