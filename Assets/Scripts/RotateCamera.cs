@@ -8,6 +8,6 @@ public class RotateCamera : MonoBehaviour
     [SerializeField] float spinningSpeed = 1f;
     void Update()
     {
-        transform.Rotate(0,0,spinningSpeed);
+        transform.Rotate(0,spinningSpeed, 0);
     }
 }

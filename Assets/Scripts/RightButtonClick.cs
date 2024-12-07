@@ -53,10 +53,20 @@ public class RightButtonClick : MonoBehaviour
             }
                 
         }
-        if(currentprofile == profileNumber.Length)
+        if(currentprofile >= profileNumber.Length)
         {
             currentprofile = 0;
         }
+        while(currentprofile == StaticManager.firstChoice || currentprofile == StaticManager.secondChoice || currentprofile == StaticManager.lastChoice)
+        {
+            currentprofile++;
+            if (currentprofile >= profileNumber.Length)
+            {
+                currentprofile = 0;
+            }
+        }
+
+        
         profileNumber[currentprofile].SetActive(true);
         Debug.Log("CurrentProfilechoice2: " + currentprofile);
         Debug.Log("-----------------------------------------");

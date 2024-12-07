@@ -10,4 +10,8 @@ public class NextLevelButton : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
+    public void NextCommision()
+    {
+        SceneManager.LoadScene("CommisionScene");
+    }
 }
