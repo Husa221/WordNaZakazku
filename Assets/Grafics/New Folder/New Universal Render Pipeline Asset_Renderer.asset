@@ -55,7 +55,7 @@ MonoBehaviour:
   m_DepthPrimingMode: 0
   m_CopyDepthMode: 1
   m_AccurateGbufferNormals: 0
-  m_IntermediateTextureMode: 1
+  m_IntermediateTextureMode: 0
 --- !u!114 &8406675495286019322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71,11 +71,11 @@ MonoBehaviour:
   m_Active: 1
   m_Settings:
     AOMethod: 0
-    Downsample: 0
+    Downsample: 1
     AfterOpaque: 0
     Source: 1
     NormalSamples: 1
-    Intensity: 33000
+    Intensity: 3
     DirectLightingStrength: 0.25
     Radius: 0.035
     Samples: 1
