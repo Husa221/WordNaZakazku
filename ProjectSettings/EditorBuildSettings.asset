@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/CommisionScene.unity
+    guid: 557ac12ddd9aa484eb0522c99fe9bf31
+  - enabled: 1
     path: Assets/Scenes/TinderScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
