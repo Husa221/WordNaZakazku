@@ -1597,10 +1597,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildings:
+  - {fileID: 6488063793025888578, guid: 9f1718b36c6286247ac46ff01017452d, type: 3}
+  - {fileID: 1225622573311442597, guid: 78bd159b070f0a442affd9c12be7cfa3, type: 3}
   - {fileID: 919132149155446097, guid: 3f2ed6fa04aa6804b9174a0b075af798, type: 3}
-  - {fileID: 919132149155446097, guid: 3f2ed6fa04aa6804b9174a0b075af798, type: 3}
-  - {fileID: 919132149155446097, guid: a715cda3c343eb34c98230165c4a2418, type: 3}
-  - {fileID: 919132149155446097, guid: a715cda3c343eb34c98230165c4a2418, type: 3}
+  - {fileID: 919132149155446097, guid: 8da80c6e17b747a43b9159a17fc2a880, type: 3}
   spawn1: {fileID: 1060804115}
   spawn2: {fileID: 622505655}
   spawn3: {fileID: 404330602}
