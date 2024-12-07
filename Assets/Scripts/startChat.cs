@@ -21,5 +21,7 @@ public class startChat : MonoBehaviour
     public void onClick()
     {
         dialogueRunner.StartDialogue(gameObject.transform.parent.name);
+        GameObject canvas = GameObject.Find("CanvasOur");
+        canvas.SetActive(false);
     }
 }
