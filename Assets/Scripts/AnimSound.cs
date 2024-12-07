@@ -16,7 +16,7 @@ public class AnimSound : MonoBehaviour
   IEnumerator StopSound()
     {
         yield return new WaitForSeconds(timer);
-        anim.Stop();
+        anim.loop = false;
 
     }
 }

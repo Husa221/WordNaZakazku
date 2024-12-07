@@ -667,7 +667,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 0c008ee3ee72a4362a35be25fa5de043, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1384,7 +1384,18 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1468342835002336700, guid: 234be177073f33c46887f8afe81a928f, type: 3}
       propertyPath: m_text
-      value: "I want something scary, something that gives other goosebumps\n\t\t~Tony"
+      value: "So... there's this beautiful planet and I need some beings to live
+        on it. Usually I would ask for something specific, but since it's your first
+        day, just go and see what's out there and pick the beings that you like.
+        \n\t\t~Tony"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1468342835002336700, guid: 234be177073f33c46887f8afe81a928f, type: 3}
+      propertyPath: m_fontSize
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1468342835002336700, guid: 234be177073f33c46887f8afe81a928f, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 2307125767579595927, guid: 234be177073f33c46887f8afe81a928f, type: 3}
       propertyPath: m_Pivot.x
