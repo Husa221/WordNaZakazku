@@ -3,14 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 
-public class AudioCalmer : MonoBehaviour
+public class AudioActivator : MonoBehaviour
 {
     [SerializeField] AudioMixerSnapshot silent, normal;
     // Start is called before the first frame update
     void Start()
     {
-        silent.TransitionTo(1);
+        normal.TransitionTo(1);
     }
 
-   
 }
