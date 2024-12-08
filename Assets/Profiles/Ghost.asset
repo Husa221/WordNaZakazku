@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 737725dd31cb383418020eb3b075c7a8, type: 3}
   m_Name: Ghost
   m_EditorClassIdentifier: 
-  profilePicture: {fileID: 21300000, guid: 189dd5af3164b4840b7b549753af052f, type: 3}
+  profilePicture: {fileID: 21300000, guid: 1c36f0c64f594374184494c015c93567, type: 3}
   profileName: The Ghost
   aboutMe: hey boo! wanna go to afterparty in afterlife with me? i like travelling,
     cars and ghost peppers.

@@ -3114,7 +3114,7 @@ GameObject:
   - component: {fileID: 978335449}
   - component: {fileID: 978335448}
   m_Layer: 5
-  m_Name: FlowerLady
+  m_Name: Flowey
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
