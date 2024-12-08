@@ -17,10 +17,13 @@ public class NextLevelButton : MonoBehaviour
         
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
+    void LoadCommissionScene()
+    {
+        SceneManager.LoadScene("CommisionScene");
+    }
     public void NextCommision()
     {
         buttonSound.Play();
-       
-        SceneManager.LoadScene("CommisionScene");
+        Invoke("LoadCommissionScene", 0.2f);
     }
 }

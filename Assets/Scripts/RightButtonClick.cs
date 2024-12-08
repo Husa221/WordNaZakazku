@@ -44,14 +44,14 @@ public class RightButtonClick : MonoBehaviour
     public void trash() 
     {
         Debug.Log("trash");
-        audioSource.PlayOneShot(trashSound, 0.7F);
+        audioSource.PlayOneShot(trashSound, 1.0F);
         NextProfile();
     }
 
     public void love()
     {
         Debug.Log("love");
-        audioSource.PlayOneShot(loveSound, 0.7F);
+        audioSource.PlayOneShot(loveSound, 1.1F);
     }
 
     public void NextProfile()
