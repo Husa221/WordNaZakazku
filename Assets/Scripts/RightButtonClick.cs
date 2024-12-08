@@ -82,7 +82,7 @@ public class RightButtonClick : MonoBehaviour
     public void love()
     {
         Debug.Log("love");
-        audioSource.PlayOneShot(loveSound, 1.1F);
+        audioSource.PlayOneShot(loveSound, 1.2F);
     }
 
     public void NextProfile()
