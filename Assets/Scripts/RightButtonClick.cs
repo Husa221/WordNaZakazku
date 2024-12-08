@@ -11,6 +11,37 @@ public class RightButtonClick : MonoBehaviour
 
     [SerializeField] GameObject[] profileNumber;
 
+    void Start()
+    {
+        // Shuffle scenarios array
+        Shuffle(profileNumber);
+        profileNumber[0].SetActive(true);
+    }
+
+
+    void Shuffle(GameObject[] a)
+    {
+        // Loops through array
+        for (int i = a.Length - 1; i > 0; i--)
+        {
+            // Randomize a number between 0 and i (so that the range decreases each time)
+            int rnd = Random.Range(0, i);
+
+            // Save the value of the current i, otherwise it'll overright when we swap the values
+            GameObject temp = a[i];
+
+            // Swap the new and old values
+            a[i] = a[rnd];
+            a[rnd] = temp;
+        }
+
+        // Print
+        for (int i = 0; i < a.Length; i++)
+        {
+            Debug.Log(a[i]);
+        }
+    }
+
     public void ProfileLiked()
     {
         StaticManager.profilesLiked++;
@@ -21,15 +52,15 @@ public class RightButtonClick : MonoBehaviour
             {
                 if (profileNumber[i].activeSelf)
                 {
-                    if(StaticManager.firstChoice == 100)
+                    if(StaticManager.firstChoice == "")
                     {
-                        StaticManager.firstChoice = i;
-                    }else if(StaticManager.secondChoice == 100) 
+                        StaticManager.firstChoice = profileNumber[i].name;
+                    }else if(StaticManager.secondChoice == "") 
                     { 
-                        StaticManager.secondChoice = i;
-                    }else if(StaticManager.lastChoice == 100)
+                        StaticManager.secondChoice = profileNumber[i].name;
+                    }else if(StaticManager.lastChoice == "")
                     {
-                        StaticManager.lastChoice = i;
+                        StaticManager.lastChoice = profileNumber[i].name;
                     }
                 }
             }
@@ -56,7 +87,7 @@ public class RightButtonClick : MonoBehaviour
 
     public void NextProfile()
     {
-        int currentprofile = 100;
+        int currentprofile = 0;
         Debug.Log("CurrentProfilechoice: " + currentprofile);
         for (int i = 0; i < profileNumber.Length; i++)
         {
@@ -71,18 +102,21 @@ public class RightButtonClick : MonoBehaviour
             }
                 
         }
-        if(currentprofile >= profileNumber.Length)
+        if (currentprofile >= profileNumber.Length)
         {
             currentprofile = 0;
         }
-        while(currentprofile == StaticManager.firstChoice || currentprofile == StaticManager.secondChoice || currentprofile == StaticManager.lastChoice)
+
+
+        while (profileNumber[currentprofile].name == StaticManager.firstChoice || profileNumber[currentprofile].name == StaticManager.secondChoice || profileNumber[currentprofile].name == StaticManager.lastChoice)
         {
             currentprofile++;
-            if (currentprofile >= profileNumber.Length)
+            if (currentprofile >= (profileNumber.Length))
             {
                 currentprofile = 0;
             }
         }
+            
 
         
         profileNumber[currentprofile].SetActive(true);

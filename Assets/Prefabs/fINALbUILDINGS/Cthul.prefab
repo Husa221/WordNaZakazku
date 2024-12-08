@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6776726390682982272}
   m_Layer: 0
-  m_Name: Tentacles
+  m_Name: Cthul
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

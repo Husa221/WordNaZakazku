@@ -1867,6 +1867,9 @@ MonoBehaviour:
   - {fileID: 1225622573311442597, guid: 78bd159b070f0a442affd9c12be7cfa3, type: 3}
   - {fileID: 919132149155446097, guid: 3f2ed6fa04aa6804b9174a0b075af798, type: 3}
   - {fileID: 8244435263163609236, guid: ae50d56c7c7d91843b9b4fe3752e5523, type: 3}
+  - {fileID: 8244435263163609236, guid: ae50d56c7c7d91843b9b4fe3752e5523, type: 3}
+  - {fileID: 8244435263163609236, guid: ae50d56c7c7d91843b9b4fe3752e5523, type: 3}
+  - {fileID: 8244435263163609236, guid: ae50d56c7c7d91843b9b4fe3752e5523, type: 3}
   spawn1: {fileID: 1060804115}
   spawn2: {fileID: 622505655}
   spawn3: {fileID: 404330602}

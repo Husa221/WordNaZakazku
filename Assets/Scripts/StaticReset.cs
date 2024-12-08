@@ -7,8 +7,8 @@ public class StaticReset : MonoBehaviour
     private void Awake()
     {
         StaticManager.profilesLiked = 0;
-        StaticManager.firstChoice = 100;
-        StaticManager.secondChoice = 100;
-        StaticManager.lastChoice = 100;
+        StaticManager.firstChoice = "";
+        StaticManager.secondChoice = "";
+        StaticManager.lastChoice = "";
     }
 }
