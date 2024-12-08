@@ -60,6 +60,9 @@ sysinfo.txt
 *.aab
 *.unitypackage
 *.app
+ThisPlanetOfOurs-linux
+ThisPlanetOfOurs-windows
+ThisPlanetOfOurs-mac
 
 # Crashlytics generated file
 crashlytics-build.properties
