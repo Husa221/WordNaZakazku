@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 737725dd31cb383418020eb3b075c7a8, type: 3}
   m_Name: Bohyne
   m_EditorClassIdentifier: 
-  profilePicture: {fileID: 21300000, guid: 0eb33dff9e2ae0e4c89917d64ff93f81, type: 3}
+  profilePicture: {fileID: 21300000, guid: f2d7b074ca61cd44bbf2da1594df4c7a, type: 3}
   profileName: Goddess
   aboutMe: Being an idol is hard work. But we could hangout in the sewers after the
     sunset. Bring crystals.
