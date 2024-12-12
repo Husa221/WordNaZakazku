@@ -48,65 +48,59 @@ public class RightButtonClick : MonoBehaviour
 
         for(int i = 0; i < profileNumber.Length; i++)
         {
-            if (profileNumber[i] != null)
+            if (profileNumber[i].activeSelf)
             {
-                if (profileNumber[i].activeSelf)
+                if(StaticManager.firstChoice == "")
                 {
-                    if(StaticManager.firstChoice == "")
-                    {
-                        StaticManager.firstChoice = profileNumber[i].name;
-                    }else if(StaticManager.secondChoice == "") 
-                    { 
-                        StaticManager.secondChoice = profileNumber[i].name;
-                    }else if(StaticManager.lastChoice == "")
-                    {
-                        StaticManager.lastChoice = profileNumber[i].name;
-                    }
+                    StaticManager.firstChoice = profileNumber[i].name;
+                }else if(StaticManager.secondChoice == "") 
+                { 
+                    StaticManager.secondChoice = profileNumber[i].name;
+                }else if(StaticManager.lastChoice == "")
+                {
+                    StaticManager.lastChoice = profileNumber[i].name;
                 }
+                break;
             }
         }
 
-        Debug.Log("ProfilesLiked: " + StaticManager.profilesLiked);
-        Debug.Log("Firstchoice:" + StaticManager.firstChoice);
-        Debug.Log("Secondchoice: " + StaticManager.secondChoice);
-        Debug.Log("Lasttchoice: " + StaticManager.lastChoice);
+        Debug.Log("profilesLiked: " + StaticManager.profilesLiked);
+        Debug.Log("firstChoice:" + StaticManager.firstChoice);
+        Debug.Log("secondChoice: " + StaticManager.secondChoice);
+        Debug.Log("lastChoice: " + StaticManager.lastChoice);
     }
 
     public void trash() 
     {
-        Debug.Log("trash");
+        Debug.Log("trash() called");
         audioSource.PlayOneShot(trashSound, 1.0F);
         NextProfile();
     }
 
     public void love()
     {
-        Debug.Log("love");
+        Debug.Log("love() called");
         audioSource.PlayOneShot(loveSound, 1.2F);
     }
 
     public void NextProfile()
     {
         int currentprofile = 0;
-        Debug.Log("CurrentProfilechoice: " + currentprofile);
+        Debug.Log("currentprofile: " + currentprofile);
         for (int i = 0; i < profileNumber.Length; i++)
         {
-            if (profileNumber[i] != null)
+            if (profileNumber[i].activeSelf)
             {
-                if (profileNumber[i].activeSelf)
-                {
-                    currentprofile = i + 1;
-                    profileNumber[i].SetActive(false);
-
-                }
+                currentprofile = i + 1;
+                profileNumber[i].SetActive(false);
+                Debug.Log($"Instance {profileNumber[i].name} disabled");
+                break;
             }
-                
         }
         if (currentprofile >= profileNumber.Length)
         {
             currentprofile = 0;
         }
-
 
         while (profileNumber[currentprofile].name == StaticManager.firstChoice || profileNumber[currentprofile].name == StaticManager.secondChoice || profileNumber[currentprofile].name == StaticManager.lastChoice)
         {
@@ -116,11 +110,10 @@ public class RightButtonClick : MonoBehaviour
                 currentprofile = 0;
             }
         }
-            
-
         
         profileNumber[currentprofile].SetActive(true);
-        Debug.Log("CurrentProfilechoice2: " + currentprofile);
+        Debug.Log($"Instance {profileNumber[currentprofile].name} enabled");
+        Debug.Log("currentprofile: " + currentprofile);
         Debug.Log("-----------------------------------------");
 
 
