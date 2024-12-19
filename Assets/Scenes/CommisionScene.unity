@@ -130,6 +130,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1371636879}
     m_Modifications:
+    - target: {fileID: 1468342835002336700, guid: 234be177073f33c46887f8afe81a928f, type: 3}
+      propertyPath: m_text
+      value: "Do whatever you feel like, now it's your world\n\t\t~Authors"
+      objectReference: {fileID: 0}
     - target: {fileID: 2307125767579595927, guid: 234be177073f33c46887f8afe81a928f, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -688,7 +692,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1468342835002336700, guid: 234be177073f33c46887f8afe81a928f, type: 3}
       propertyPath: m_text
-      value: "I am skareeeed, make some safe space pleaase\n\t\t~ Bonifac"
+      value: "I am scaaaaared, make a safe space pleaase\n\t\t~ Bonifac"
       objectReference: {fileID: 0}
     - target: {fileID: 2307125767579595927, guid: 234be177073f33c46887f8afe81a928f, type: 3}
       propertyPath: m_Pivot.x
@@ -1247,7 +1251,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1468342835002336700, guid: 234be177073f33c46887f8afe81a928f, type: 3}
       propertyPath: m_text
-      value: "Get me funky world, with funky inhabitans\n\t\t    ~Troy "
+      value: "Get me funky world, with funky inhabitants\n\t\t    ~Troy "
       objectReference: {fileID: 0}
     - target: {fileID: 2307125767579595927, guid: 234be177073f33c46887f8afe81a928f, type: 3}
       propertyPath: m_Pivot.x
