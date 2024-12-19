@@ -54,10 +54,4 @@ public class WorldBuilder : MonoBehaviour
         Instantiate(buildings[building2], new Vector3(spawn2.position.x, spawn2.position.y, spawn2.position.z), new Quaternion(spawn2.rotation.x, spawn2.rotation.y, spawn2.rotation.z, 1));
         Instantiate(buildings[building3], new Vector3(spawn3.position.x, spawn3.position.y, spawn3.position.z), new Quaternion(spawn3.rotation.x, spawn3.rotation.y, spawn3.rotation.z, 1));
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
