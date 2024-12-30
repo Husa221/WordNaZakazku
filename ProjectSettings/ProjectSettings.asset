@@ -88,7 +88,7 @@ PlayerSettings:
   deferSystemGesturesMode: 0
   hideHomeButton: 0
   submitAnalytics: 1
-  usePlayerLog: 1
+  usePlayerLog: 0
   dedicatedServerOptimizations: 0
   bakeCollisionMeshes: 0
   forceSingleInstance: 0
@@ -109,7 +109,7 @@ PlayerSettings:
   xboxEnableHeadOrientation: 0
   xboxEnableGuest: 0
   xboxEnablePIXSampling: 0
-  metalFramebufferOnly: 0
+  metalFramebufferOnly: 1
   xboxOneResolution: 0
   xboxOneSResolution: 0
   xboxOneXResolution: 3
@@ -872,7 +872,7 @@ PlayerSettings:
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
   cloudProjectId: 
-  framebufferDepthMemorylessMode: 0
+  framebufferDepthMemorylessMode: 2
   qualitySettingsNames: []
   projectName: 
   organizationId: 
