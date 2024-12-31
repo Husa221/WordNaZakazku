@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: LiberationSans SDF Material
-  m_Shader: {fileID: 4800000, guid: fe393ace9b354375a9cb14cdbbc28be4, type: 3}
+  m_Shader: {fileID: 4800000, guid: 68e6db2ebdc24f95958faec2be5558d6, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -98,7 +98,7 @@ Material:
     - _GlowOffset: 0
     - _GlowOuter: 0.05
     - _GlowPower: 0.75
-    - _GradientScale: 10
+    - _GradientScale: 6
     - _LightAngle: 3.1416
     - _MaskSoftnessX: 0
     - _MaskSoftnessY: 0
@@ -178,24 +178,24 @@ MonoBehaviour:
     m_FaceIndex: 0
     m_FamilyName: Liberation Sans
     m_StyleName: Regular
-    m_PointSize: 86
+    m_PointSize: 36
     m_Scale: 1
-    m_UnitsPerEM: 0
-    m_LineHeight: 98.8916
-    m_AscentLine: 77.853516
-    m_CapLine: 59
-    m_MeanLine: 45
+    m_UnitsPerEM: 2048
+    m_LineHeight: 41.396484
+    m_AscentLine: 32.589844
+    m_CapLine: 25
+    m_MeanLine: 19
     m_Baseline: 0
-    m_DescentLine: -18.22461
-    m_SuperscriptOffset: 77.853516
+    m_DescentLine: -7.6289062
+    m_SuperscriptOffset: 32.589844
     m_SuperscriptSize: 0.5
-    m_SubscriptOffset: -18.22461
+    m_SubscriptOffset: -7.6289062
     m_SubscriptSize: 0.5
-    m_UnderlineOffset: -12.261719
-    m_UnderlineThickness: 6.298828
-    m_StrikethroughOffset: 18
-    m_StrikethroughThickness: 6.298828
-    m_TabWidth: 24
+    m_UnderlineOffset: -5.1328125
+    m_UnderlineThickness: 2.6367188
+    m_StrikethroughOffset: 7.6
+    m_StrikethroughThickness: 2.6367188
+    m_TabWidth: 10
   m_GlyphTable: []
   m_CharacterTable: []
   m_AtlasTextures:
@@ -234,7 +234,7 @@ MonoBehaviour:
   atlas: {fileID: 0}
   m_AtlasWidth: 512
   m_AtlasHeight: 512
-  m_AtlasPadding: 9
+  m_AtlasPadding: 5
   m_AtlasRenderMode: 4169
   m_glyphInfoList: []
   m_KerningTable:
@@ -247,8 +247,8 @@ MonoBehaviour:
     sourceFontFileName: 
     sourceFontFileGUID: e3265ab4bf004d28a9537516768c1c75
     pointSizeSamplingMode: 0
-    pointSize: 86
-    padding: 9
+    pointSize: 36
+    padding: 5
     packingMode: 4
     atlasWidth: 512
     atlasHeight: 512
